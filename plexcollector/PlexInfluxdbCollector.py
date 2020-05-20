@@ -152,8 +152,8 @@ class PlexInfluxdbCollector:
             active_streams[server._baseurl] = active_sessions
         try:
             self._process_active_streams(active_streams)
-        catch:
-            pass
+        except:
+            print('Error, plexamp')
 
     def _process_active_streams(self, stream_data):
         """
